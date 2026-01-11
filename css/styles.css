@@ -4,3 +4,13 @@
     max-height: 100px;
     display: inline-block;
 }
+
+
+section img {
+    max-height: 200px;
+    width: auto;
+}
+
+menu {
+    background-color: black;
+}
