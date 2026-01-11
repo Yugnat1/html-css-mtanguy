@@ -1,2 +1,6 @@
 
 /** Mobile Style **/
+.logo {
+    max-height: 100px;
+    display: inline-block;
+}
