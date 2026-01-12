@@ -1,6 +1,8 @@
 
 /** Mobile Style **/
-
+body {
+    background-color: lightgray;
+}
 header {
     display:flex
 }
@@ -13,4 +15,15 @@ header {
 section img {
     max-height: 200px;
     width: auto;
+}
+
+
+
+
+
+
+
+/* Contact Page */
+.form__input {
+    display: block;
 }

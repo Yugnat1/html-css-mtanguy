@@ -23,8 +23,57 @@
         <i class="fa-regular fa-heart fa-2xl" ></i>
     </header>
     <section>
-       <-- CONTACT -->
+        <form action="form-success.php" method="POST">
+            <fieldset>
+                <legend>Your Details</legend>
+                <label for="name">Your Name</label>
+                <input type="text" name="name" id="name" class="form__input">
+                <label for="email">Your e-mail adress</label>
+                <input type="email" name="e-mail" id="e-mail" class="form__input">
+                <label for="phone">Your phone number</label>
+                <input type="tel" name="phone" id="phone" class="form__input">
+            </fieldset>
+            <fieldset>
+                <legend>Your Text</legend>
+                <textarea id="message" name="message" rows="10" cols="30" ></textarea>
+            </fieldset>
+            <input type="submit" value="Send Question"
+        </form>
     </section>
-    <footer></footer>
+    <section>
+        <h1>Sign Up:</h1>
+    </section>
+    <section>
+        <h1>Frequently Asked Questions</h1>
+             <details>
+                <summary>When will my order arrive ?</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+             </details>
+            <details>
+                <summary>How do I return the product ?</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </details>
+            <details>
+                <summary>When is the money charged my account ?</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </details>
+            <details>
+                <summary>How do I know its secure to order here ?</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </details>
+    </section>
+    <footer>
+        <section>
+            <h2>Our Location:</h2>
+            <a href="https://maps.google.com/?q=Your+Business+Address" target="_blank" rel="noopener" class="footer-map">
+            <img src="/images/map-preview.webp" alt="Map showing our store location in Oslo"></a>
+        </section>
+        <section>  
+        </section>
+            <h2>Contact Us:</h2>
+        <section>
+            <h2>Social Media:</h2>
+        </section>
+    </footer>
 </body>
 </html>
