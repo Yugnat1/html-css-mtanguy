@@ -1,5 +1,9 @@
 
 /** Mobile Style **/
+
+header {
+    display:flex
+}
 .logo {
     max-height: 100px;
     display: inline-block;
