@@ -34,7 +34,19 @@ section img {
     max-height: 200px;
     width: auto;
 }
-/** Main Page **(
+/** Main Page **/
+.product-technical {
+    height: 40vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.product-card {
+    margin: 10px;
+    flex: 1;
+}
 
 /** Outlet Page **/
 #outlet-products {
@@ -75,19 +87,27 @@ section img {
   .logo {
     display: none;
   }
+
+  .product-technical {
+    padding-top: 50px;
+    flex-direction: column;
+    min-height: 900px;
+  }
 }
 
 /* Media tablet and up */
 @media (min-width: 768px) {
 
-
     .logo {
         max-height: 70px;
         display: block;
     }
-  .card {
-    padding: 1.5rem;
-    font-size: 1.1rem;
+  
+    .product-technical {
+    margin; 0 auto;
+    padding: 20px 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
