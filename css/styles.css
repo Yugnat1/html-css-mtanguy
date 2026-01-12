@@ -1,14 +1,32 @@
-
-/** Mobile Style **/
 body {
-    background-color: lightgray;
+    margin: 0 auto;
 }
+
 header {
-    display:flex
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 120px;
+}
+
+menu a {
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    padding-left: 40px;
+    color: #000000;
+
+    text-decoration: none;
+}
+
+.header-icons {
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
 }
 .logo {
+    padding-left: 10px;
     max-height: 100px;
-    display: inline-block;
 }
 
 
@@ -16,14 +34,67 @@ section img {
     max-height: 200px;
     width: auto;
 }
+/** Main Page **(
 
+/** Outlet Page **/
+#outlet-products {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px 20px;
+}
 
-
-
-
+.outlet-card {
+    margin: 10px;
+    width: 350px;
+    background-color: white;'
+    border-radius: 10px;
+}
 
 
 /* Contact Page */
 .form__input {
     display: block;
+}
+
+
+
+
+
+
+
+
+/** Media mobile and up MOBILE **/
+@media (max-width: 550px) {
+
+  .card {
+    padding: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+/* Media tablet and up */
+@media (min-width: 768px) {
+
+
+    .logo {
+        max-height: 70px;
+        display: block;
+    }
+  .card {
+    padding: 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Media desktop */
+@media (min-width: 1024px) {
+  .card {
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
 }
