@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quattrocento:wght@400;700&display=swap');
 
 body {
     margin: 0 auto;
 }
 
-h1 {
-    font-family: 'Funnel Sans', Verdana, Geneva, Tahoma, sans-serif;
+h1,h2,h3 {
+    font-family: 'Oswald', Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+
 p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Quattrocento', Georgia, 'Times New Roman', serif;
 }
 
 
@@ -51,11 +53,18 @@ section img {
     background-color: antiquewhite;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
 
 .product-card {
     margin: 10px;
+    flex: 1;
+}
+
+.product-sellingpoint {
+    padding: 10px 20px;
+    max-width: 400px;
     flex: 1;
 }
 
