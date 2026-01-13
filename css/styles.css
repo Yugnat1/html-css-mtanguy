@@ -12,6 +12,7 @@ h1,h2,h3 {
 
 p {
     font-family: 'Quattrocento', Georgia, 'Times New Roman', serif;
+    font-size: large;
 }
 
 
@@ -47,7 +48,9 @@ section img {
     max-height: 200px;
     width: auto;
 }
+
 /** Main Page **/
+
 .product-technical {
     height: 40vh;
     background-color: antiquewhite;
