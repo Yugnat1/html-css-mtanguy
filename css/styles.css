@@ -7,9 +7,9 @@ dark-blue: #2E3740
 
 
 **/
-body {
+body,html {
     margin: 0 auto;
-    padding: 0;
+    height: 100%;
 }
 
 h1,h2,h3 {
@@ -40,7 +40,7 @@ nav a {
 }
 
 header {
-    background-color: #2E3740;
+   /** background-color: #2E3740; **/
     width: 100%;
 }
 
@@ -60,7 +60,19 @@ nav {
 .text-logo {
     display: inline-block;
 }
+
+nav a::active {
+    text-decoration: underline;
+}
 /** Main Page **/
+
+#welcome {
+    margin: 0 auto;
+    height: 70vh;
+    background-image: url("../images/brad-barmore_hero_xl.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .product-summary {
     padding-top: 50px;
@@ -73,9 +85,29 @@ nav {
 }
 
 
+#product {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    justify-content: space-around;
+    align-items: center;
+}
+
 .product-card {
-    margin: 10px;
-    flex: 1;
+    width: 300px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product-card img{
+    height: 200px;
+    width: auto;
+
 }
 
 .product-sellingpoint {
@@ -113,19 +145,21 @@ nav {
 
 /** Footer **/
 footer {
-    color: white;
-    background-color: #2E3740;
-    padding: 0px 50px 0 50px;
-    display: grid;
-    margin: 50px auto;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 4em;
+    margin-top: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
 }
 
 
-/** Media mobile and up MOBILE **/
+/** Media mobile and up **/
 @media (max-width: 767px) {
+
+
 
   .card {
     padding: 1.5rem;
@@ -136,10 +170,18 @@ footer {
     display: none;
   }
 
+  .product-card {
+    flex-direction: column;
+  }
+
   .product-summary {
 
   }
 
+  #welcome {
+    height: 20vh;
+    background-image: url("../images/brad-barmore_hero_small.jpg");
+  }
 
 }
 
@@ -171,10 +213,12 @@ footer {
     nav {
         display: block;
         position: static;
+        background-color: #fff;
+    
     }
 
     nav a {
-        color: #fff;
+        color: #333;
         display: inline-block;
     }
 
