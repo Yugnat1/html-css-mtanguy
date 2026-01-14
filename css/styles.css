@@ -42,9 +42,6 @@ nav a {
 header {
     background-color: #2E3740;
     width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
 }
 
 nav {
@@ -65,14 +62,16 @@ nav {
 }
 /** Main Page **/
 
-.product-technical {
-    height: 40vh;
+.product-summary {
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: antiquewhite;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
+
 
 .product-card {
     margin: 10px;
@@ -110,6 +109,21 @@ nav {
     display: block;
 }
 
+
+
+/** Footer **/
+footer {
+    color: white;
+    background-color: #2E3740;
+    padding: 0px 50px 0 50px;
+    display: grid;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 4em;
+}
+
+
 /** Media mobile and up MOBILE **/
 @media (max-width: 767px) {
 
@@ -122,11 +136,11 @@ nav {
     display: none;
   }
 
-  .product-technical {
-    padding-top: 50px;
-    flex-direction: column;
-    min-height: 900px;
+  .product-summary {
+
   }
+
+
 }
 
 /* Media tablet and up */
@@ -139,13 +153,16 @@ nav {
     .text-logo {
         display: none;
     }
-  
-    .product-technical {
-    margin; 0 auto;
-    padding: 20px 40px;
+
+    .product-summary{
     flex-direction: row;
-    flex-wrap: wrap;
-  }
+    min-width: fit-content;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3em;
+    }
 }
 
 /* Media desktop */
@@ -157,6 +174,7 @@ nav {
     }
 
     nav a {
+        color: #fff;
         display: inline-block;
     }
 

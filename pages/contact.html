@@ -13,16 +13,23 @@
 <body>
     <header>
         <img src="/images/logo/RainyDays_Logo.png" class="logo">
-        <menu>
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="hamburger-icon"><i class="fa fa-bars fa-2x"></i></label>
+        <nav>
             <a href="../index.html" >Home</a>
             <a href="./jackets.html" >Jackets</a>
             <a href="./outlet.html" >Outlet</a>
             <a href="./contact.html" >Contact</a>
-        </menu>
+        </nav>
+        <!--
         <i class="fa-regular fa-user fa-2xl"></i>
         <i class="fa-solid fa-cart-shopping fa-2xl"></i>
         <i class="fa-regular fa-heart fa-2xl" ></i>
+        -->
     </header>
+    <section>
+        <h1>Contact Form</h1>
+    </section>
     <section>
         <form action="form-success.php" method="POST">
             <fieldset>
@@ -38,7 +45,7 @@
                 <legend>Your Text</legend>
                 <textarea id="message" name="message" rows="10" cols="30" ></textarea>
             </fieldset>
-            <input type="submit" value="Send Question"
+            <input type="submit" value="Send Question">
         </form>
     </section>
     <section>
