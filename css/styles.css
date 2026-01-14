@@ -69,7 +69,7 @@ nav a::active {
 #welcome {
     margin: 0 auto;
     height: 70vh;
-    background-image: url("images/brad-barmore_hero_xl.jpg");
+    background-image: url("../images/brad-barmore_hero_xl.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
