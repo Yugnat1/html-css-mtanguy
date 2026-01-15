@@ -175,10 +175,6 @@ nav {
 
 /** Jackets Page **/
 
-.jackets {
-    display: flex;
-    flex-direction: column;
-}
 
 /** Outlet Page **/
 #outlet-products {
@@ -233,8 +229,9 @@ footer {
   }
 
   #welcome {
-    height: 20vh;
-    background-image: url("../images/brad-barmore_hero_small.jpg");
+    color: #fff;
+    height: 40vh;
+    background-image: url("../images/hero-cta-mobile.jpg");
   }
 
 }
@@ -254,12 +251,15 @@ footer {
     flex-direction: row;
     min-width: fit-content;
     }
-        footer {
-        padding-top: 100px;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
+    
+    footer {
+    padding-top: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     }
 
+    #product {
+        flex-direction: ;
 }
 
 /* Media desktop */
