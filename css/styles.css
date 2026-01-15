@@ -107,11 +107,17 @@ nav {
     text-align: center;
 }
 
-#product {
+#product-display {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.product {
     padding: 20px 20px 50px 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;    
+    justify-content: center;
     row-gap: 1em;
     column-gap: 2em;
 }
@@ -258,8 +264,9 @@ footer {
     justify-items: center;
     }
 
-    #product {
-        flex-direction: ;
+    .product {
+        flex-direction: row;
+
 }
 
 /* Media desktop */
