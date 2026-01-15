@@ -9,7 +9,7 @@ dark-blue: #2E3740
 **/
 body,html {
     margin: 0;
-    height: 100%;
+    min-height: 100%;
 }
 
 h1,h2,h3 {
@@ -100,7 +100,7 @@ nav {
 /** Main Page **/
 
 #welcome {
-    min-height: 400px;
+    min-height: 70vh;
     background-image: url("../images/brad-barmore_hero_xl.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -111,21 +111,20 @@ nav {
 
 #product-display {
     margin: 0 auto;
+    padding: 40px 0 50px 0;
     max-width: 80%;
 }
 
 .product {
-    padding: 20px 20px 50px 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;    
-    justify-content: center;
-    row-gap: 1em;
-    column-gap: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .product-card {
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
   padding: 20px 30px 20px 30px;
   background: #fff;
   border-radius: 12px;
@@ -195,7 +194,7 @@ nav {
 .outlet-card {
     margin: 10px;
     width: 350px;
-    background-color: white;'
+    background-color: white;
     border-radius: 10px;
 }
 
@@ -219,11 +218,6 @@ footer {
 /** Media mobile and up **/
 @media (max-width: 767px) {
 
-  .card {
-    padding: 1.5rem;
-    font-size: 1.1rem;
-  }
-
   .header-logo {
     display: none;
   }
@@ -238,7 +232,7 @@ footer {
 
   #welcome {
     color: #fff;
-    height: 40vh;
+
     background-image: url("../images/hero-cta-mobile.jpg");
   }
 
@@ -255,9 +249,14 @@ footer {
         display: none;
     }
 
+       header {
+        justify-content: center;
+    }
+ 
     .product-summary{
     flex-direction: row;
     min-width: fit-content;
+    justify-content: center;
     }
     
     footer {
@@ -286,7 +285,7 @@ footer {
         display: inline-block;
     }
 
-    .hamburger-icon {
+     .hamburger-icon {
         display: none;
     }
 
