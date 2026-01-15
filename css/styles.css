@@ -8,7 +8,7 @@ dark-blue: #2E3740
 
 **/
 body,html {
-    margin: 0 auto;
+    margin: 0;
     height: 100%;
 }
 
@@ -19,6 +19,10 @@ h1,h2,h3 {
 p {
     font-family: 'Quattrocento', Georgia, 'Times New Roman', serif;
     font-size: large;
+}
+
+.page-heading {
+
 }
 
 nav,
@@ -41,27 +45,55 @@ nav a {
 
 header {
    /** background-color: #2E3740; **/
+   height: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
    padding-left: 10px;
    width: 100%;
 }
 
 nav {
     position: absolute;
-    background: #000000;
-    top: 30x;
+    background: #0000009f;
+    top: 70px;
     left: 0px;
     width: 100%;
 }
 
-.logo {
-    height: 65px;
-    width: auto;
+.header-logo {
+    height: 50px;
+
 }
 
 .text-logo {
     display: inline-block;
 }
 
+/** Buttons **/
+
+.btn-cta {
+  background: linear-gradient(135deg, #2E3740, #1f2a33);
+  color: #ffffff;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+.btn-view {
+  background: linear-gradient(135deg, #2E3740, #1f2a33);
+  color: #ffffff;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
 /** Main Page **/
 
 #welcome {
@@ -70,6 +102,53 @@ nav {
     background-image: url("../images/brad-barmore_hero_xl.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+#product {
+    padding: 20px 20px 50px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+    row-gap: 1em;
+    column-gap: 2em;
+}
+
+.product-card {
+  width: 320px;
+  padding: 20px 30px 20px 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-button{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.btn-view {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.btn-cta {
+  background: #2E3740;
+  color: white;
+}
+
+.product-card img{
+  height: 200px;
+  width: auto;
+  margin: 15px 0;
 }
 
 .product-summary {
@@ -82,40 +161,23 @@ nav {
     align-items: center;
 }
 
-
-#product {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;    
-    justify-content: space-around;
-    align-items: center;
-}
-
-.product-card {
-    width: 300px;
-    background-color: antiquewhite;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.product-card img{
-    height: 200px;
-    width: auto;
-
-}
-
 .product-sellingpoint {
+    text-align: center;
     padding: 10px 20px;
     max-width: 400px;
     flex: 1;
+    
 }
 
 .big-icons {
     color: #2E3740;
+}
+
+/** Jackets Page **/
+
+.jackets {
+    display: flex;
+    flex-direction: column;
 }
 
 /** Outlet Page **/
@@ -153,14 +215,12 @@ footer {
 /** Media mobile and up **/
 @media (max-width: 767px) {
 
-
-
   .card {
     padding: 1.5rem;
     font-size: 1.1rem;
   }
 
-  .logo {
+  .header-logo {
     display: none;
   }
 
@@ -194,9 +254,10 @@ footer {
     flex-direction: row;
     min-width: fit-content;
     }
-
-    footer {
-        flex-direction: row;
+        footer {
+        padding-top: 100px;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
     }
 
 }
@@ -224,4 +285,6 @@ footer {
     padding: 2rem;
     font-size: 1.2rem;
   }
+
+
 }
