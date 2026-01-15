@@ -1,3 +1,5 @@
-Hero cta image:
+Hero cta image- medium/large:
 Photo by <a href="https://unsplash.com/@bradbarmore?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brad Barmore</a> on <a href="https://unsplash.com/photos/photo-of-man-climbing-mountain-IQxcuHBF7Uo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-      
+
+hero cta image - small:
+Image by <a href="https://pixabay.com/users/noel_bauza-2019050/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1185474">Noel Bauza</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1185474">Pixabay</a>

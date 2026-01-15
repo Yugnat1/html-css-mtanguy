@@ -200,6 +200,17 @@ nav {
 /** Jackets Page **/
 
 
+
+/* Produt Details Page */
+
+#product-detail-view {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
 /** Outlet Page **/
 #outlet-products {
     display: flex;
@@ -279,6 +290,7 @@ footer i {
     min-width: fit-content;
     justify-content: center;
     }
+
     
     footer {
     padding-top: 100px;
