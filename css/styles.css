@@ -48,8 +48,7 @@ header {
    height: 100px;
    display: flex;
    align-items: center;
-   justify-content: space-evenly;
-   padding-left: 10px;
+   justify-content: space-around;
    width: 100%;
 }
 
@@ -70,6 +69,10 @@ nav {
     display: inline-block;
 }
 
+#welcome h1 {
+    font-size: 4em;
+    color: #fff;
+}
 /** Buttons **/
 
 .btn-cta {
@@ -97,8 +100,7 @@ nav {
 /** Main Page **/
 
 #welcome {
-    margin: 0 auto;
-    height: 70vh;
+    min-height: 400px;
     background-image: url("../images/brad-barmore_hero_xl.jpg");
     background-size: cover;
     background-repeat: no-repeat;
