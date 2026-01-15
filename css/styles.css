@@ -52,6 +52,10 @@ header {
    width: 100%;
 }
 
+header .btn-view {
+    color: #2E3740;
+}
+
 nav {
     position: absolute;
     background: #0000009f;
@@ -75,8 +79,21 @@ nav {
 }
 /** Buttons **/
 
+.btn-cta-big {
+  background: #5cb949;
+  width: 200px;
+  color: #ffffff;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
 .btn-cta {
-  background: linear-gradient(135deg, #2E3740, #1f2a33);
+  background: #5cb949;
   color: #ffffff;
   padding: 14px 32px;
   border: none;
@@ -88,7 +105,7 @@ nav {
 }
 
 .btn-view {
-  background: linear-gradient(135deg, #2E3740, #1f2a33);
+  background: #b9a849;
   color: #ffffff;
   padding: 14px 32px;
   border: none;
@@ -208,12 +225,16 @@ nav {
 
 /** Footer **/
 footer {
-    margin-top: 50px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
     justify-content: center;
+    background-color: #2E3740;
+    color: #fff;
 }
 
+footer i {
+    padding-right: 1em;
+}
 
 /** Media mobile and up **/
 @media (max-width: 767px) {
@@ -289,10 +310,14 @@ footer {
         display: none;
     }
 
-  .card {
+     .card {
     padding: 2rem;
     font-size: 1.2rem;
-  }
+    }
+
+    .btn-cta-big:hover {
+        border: #fff;
+    }
 
 
 }
