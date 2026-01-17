@@ -44,12 +44,11 @@ nav a {
 }
 
 header {
-   /** background-color: #2E3740; **/
    height: 100px;
    display: flex;
    align-items: center;
-   justify-content: space-around;
-   width: 100%;
+   justify-content: space-between;
+   padding: 0 20px;
 }
 
 header .btn-view {
@@ -66,7 +65,18 @@ nav {
 
 .header-logo {
     height: 50px;
+    flex: -1;
+    order: 2;
+    padding-right: 200px;
+}
 
+.logo-header {
+    order: 2;
+    margin-left: auto;
+}
+
+.logo {
+    height: 70px;
 }
 
 .text-logo {
