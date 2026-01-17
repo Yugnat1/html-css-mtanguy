@@ -36,7 +36,7 @@ nav,
 
 nav a {
     display: block;
-    font-family: 'Funnel Sans', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Oswald', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5em;
     padding: 10px 20px;
     color: #ffffff;
@@ -137,6 +137,7 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  padding-bottom: 4rem
 }
 
 .product-card {
@@ -204,12 +205,14 @@ nav {
 /* Produt Details Page */
 
 #product-detail-view {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
+  display: grid;
+  grid-template-columns: 1fr; /* one column on mobile */
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
+
 
 /** Outlet Page **/
 #outlet-products {
@@ -254,7 +257,7 @@ footer img {
 }
 
 /** Media mobile and up **/
-@media (max-width: 767px) {
+@media (max-width: 450px) {
 
   .header-logo {
     display: none;
@@ -291,6 +294,12 @@ footer img {
         justify-content: center;
     }
  
+      #welcome {
+    color: #fff;
+
+    background-image: url("../images/brad-barmore_hero_large.jpg");
+    }
+
     .product-summary{
     flex-direction: row;
     min-width: fit-content;
