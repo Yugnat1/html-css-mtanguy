@@ -179,7 +179,7 @@ nav {
 .product-summary {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: antiquewhite;
+    background-color: #94b4d385;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -273,9 +273,10 @@ footer {
     grid-template-rows: auto 1fr 1fr;
     justify-items: center;
     text-align: center;
-    background-color: #2E3740;
+    background-color: #0a345fb2;
     color: #fff;
     gap: 30px;
+    
 }
 
 footer i {
@@ -306,10 +307,7 @@ footer a:hover {
     flex-direction: column;
   }
 
-  .product-summary {
-
-  }
-
+ 
   #welcome {
     color: #fff;
 
@@ -345,7 +343,7 @@ footer a:hover {
 
     
     footer {
-    padding-top: 100px;
+    padding-top: 50px;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     }
