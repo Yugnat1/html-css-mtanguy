@@ -80,9 +80,9 @@ nav {
 /** Buttons **/
 
 .btn-cta-big {
-  background: #1da003;
+  background: #ffffff;
   width: 200px;
-  color: #ffffff;
+  color: #000000;
   padding: 20px 40px;
   border: none;
   border-radius: 30px;
@@ -256,7 +256,7 @@ nav {
     width: 350px;
     background-color: white;
     border-radius: 10px;
-    padding-top: 50px;
+    padding-top: px;
 }
 
 
@@ -284,6 +284,15 @@ footer i {
 
 footer img {
     max-width: 250px;
+}
+
+footer a {
+    color:#fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #d637db;
 }
 
 /** Media mobile and up **/
@@ -360,6 +369,11 @@ footer img {
         color: #333;
         display: inline-block;
     }
+
+    nav a:hover {
+    text-decoration: underline;
+    }
+    
 
      .hamburger-icon {
         display: none;
