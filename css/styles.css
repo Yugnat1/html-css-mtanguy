@@ -184,6 +184,7 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin: 100px 0;
 }
 
 .product-sellingpoint {
@@ -213,6 +214,33 @@ nav {
   padding: 2rem 1rem;
 }
 
+.product-view img {
+  width: 100%; /* full width on mobile */
+  height: auto;
+  border-radius: 8px;
+}
+
+
+.image-thumbnails {
+  display: flex;
+  justify-content: start;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.image-thumbnails img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+  .product-view .btn-cta {
+  display: inline;
+  margin-top: 20px;
+  text-align: center;
+}
 
 /** Outlet Page **/
 #outlet-products {
