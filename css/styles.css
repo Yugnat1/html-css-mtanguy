@@ -125,8 +125,6 @@ nav {
     text-align: center;
 }
 
-
-
 .btn-view {
   background: #e0e0e0;
   color: #333;
@@ -135,6 +133,11 @@ nav {
 .btn-cta {
   background: #2E3740;
   color: white;
+}
+
+#product-display h2 {
+    text-align: center;
+    font-size: 3rem;
 }
 
 .product-card img{
@@ -167,6 +170,7 @@ nav {
 }
 
 /** Jacket page **/
+
 #product-display {
     margin: 0 auto;
     padding: 40px 0 50px 0;
@@ -214,8 +218,6 @@ nav {
     color: #fff;
 }
 
-
-
 /* Produt Details Page */
 
 #product-detail-view {
@@ -249,20 +251,13 @@ nav {
   border-radius: 4px;
 }
 
-  .product-view .btn-cta {
+.product-view .btn-cta {
   display: inline;
   margin-top: 20px;
   text-align: center;
 }
 
 /** Outlet Page **/
-#outlet-products {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 20px 20px;
-
-}
 
 .outlet-card {
     margin: 10px;
@@ -270,6 +265,11 @@ nav {
     background-color: white;
     border-radius: 10px;
     padding-top: px;
+}
+
+#outlet-products h1 {
+    text-align: center;
+    font-size: 3rem;
 }
 
 
@@ -305,9 +305,6 @@ footer a {
     text-decoration: none;
 }
 
-footer a:hover {
-    color: #d637db;
-}
 
 /** Media mobile and up **/
 @media (max-width: 450px) {
@@ -398,4 +395,9 @@ footer a:hover {
     .btn-cta-big:hover {
         border: #fff;
     }
+
+    footer a:hover {
+    text-decoration: underline;
+}
+
 }
