@@ -258,12 +258,39 @@ nav {
 
 */
 /** Contact Page **/
-.faq {
-    background-color: #5cb949;
-}
-.contact-form {
+
+#contact-form {
     display: flex;
     flex-direction: column;
+    max-width: 500px;
+    margin: 2rem auto;
+    gap: 1rem;
+
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+label, legend {
+    font-family: 'Oswald', Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
 }
 
 details summary {
@@ -273,6 +300,17 @@ details summary {
 details p {
     font-family: 'Quattrocento', Georgia, 'Times New Roman', serif;
     font-size: large
+}
+
+#faq {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 2rem auto;
+    gap: 1rem;
+
+}
+
 
 /** Outlet Page **/
 
@@ -368,15 +406,15 @@ footer a {
     justify-content: center;
     }
 
-    
-    footer {
-    padding-top: 50 px;
+        footer {
+    padding-top: 50px;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     }
 
     .product {
         flex-direction: row;
+    }
 
 }
 
