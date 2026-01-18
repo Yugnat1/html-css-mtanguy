@@ -132,6 +132,7 @@ nav {
   font-size: 1.1rem;
   text-transform: uppercase;
 }
+
 /** Main Page **/
 
 #welcome {
@@ -180,8 +181,7 @@ nav {
     text-align: center;
     padding: 10px 20px;
     max-width: 400px;
-    flex: 1;
-    
+    flex: 1; 
 }
 
 .big-icons {
@@ -311,8 +311,6 @@ details p {
 .form__input {
     display: block;
 }
-
-
 
 /** Footer **/
 footer {
