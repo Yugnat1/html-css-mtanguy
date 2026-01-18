@@ -258,10 +258,21 @@ nav {
 
 */
 /** Contact Page **/
+.faq {
+    background-color: #5cb949;
+}
 .contact-form {
     display: flex;
     flex-direction: column;
 }
+
+details summary {
+    font-family: 'Oswald', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+}
+details p {
+    font-family: 'Quattrocento', Georgia, 'Times New Roman', serif;
+    font-size: large
 
 /** Outlet Page **/
 
