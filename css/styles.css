@@ -218,23 +218,23 @@ nav {
     color: #fff;
 }
 
-/* Produt Details Page */
+/* Produt Details Page 
 
 #product-detail-view {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-row: 1fr;
+  max-width: 55%;
   gap: 2rem;
-  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem 1rem;
+  margin-bottom: 100px;
 }
 
 .product-view img {
-  width: 100%; 
-  height: auto;
+  width: auto 
+  height: 375px;
   border-radius: 8px;
 }
-
 
 .image-thumbnails {
   display: flex;
@@ -252,9 +252,15 @@ nav {
 }
 
 .product-view .btn-cta {
-  display: inline;
   margin-top: 20px;
   text-align: center;
+}
+
+*/
+/** Contact Page **/
+.contact-form {
+    display: flex;
+    flex-direction: column;
 }
 
 /** Outlet Page **/
@@ -288,7 +294,7 @@ footer {
     text-align: center;
     background-color: #0a345fb2;
     color: #fff;
-    gap: 30px;
+    gap: 20px;
     
 }
 
