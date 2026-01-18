@@ -14,7 +14,6 @@ p {
     font-size: large;
 }
 
-
 nav,
 #menu-checkbox {
     display: none;
@@ -47,8 +46,8 @@ header .btn-view {
 
 nav {
     position: absolute;
-    background: #0000009f;
-    top: 70px;
+    background: #000000cb;
+    top: 95px;
     left: 0px;
     width: 100%;
 }
@@ -126,39 +125,7 @@ nav {
     text-align: center;
 }
 
-#product-display {
-    margin: 0 auto;
-    padding: 40px 0 50px 0;
-    max-width: 80%;
-}
 
-.product {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding-bottom: 4rem
-}
-
-.product-card {
-  max-width: 320px;
-  width: 100%;
-  padding: 20px 30px 20px 30px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.card-button{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  gap: 12px;
-  margin-top: 15px;
-}
 
 .btn-view {
   background: #e0e0e0;
@@ -199,7 +166,53 @@ nav {
     color: #2E3740;
 }
 
-/** Jackets Page **/
+/** Jacket page **/
+#product-display {
+    margin: 0 auto;
+    padding: 40px 0 50px 0;
+    max-width: 80%;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 75px 0px 75px 0px;
+}
+
+.product-card {
+  max-width: 320px;
+  width: 100%;
+  padding: 20px 30px 20px 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-button{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.page-header {
+    text-align: center;
+    padding: 40px;
+    background-image: url(../images/osman-rana-GXEZuWo5m4I-unsplash.jpg);
+    height: 20vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+}
 
 
 
@@ -207,7 +220,7 @@ nav {
 
 #product-detail-view {
   display: grid;
-  grid-template-columns: 1fr; /* one column on mobile */
+  grid-template-columns: 1fr;
   gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
@@ -215,7 +228,7 @@ nav {
 }
 
 .product-view img {
-  width: 100%; /* full width on mobile */
+  width: 100%; 
   height: auto;
   border-radius: 8px;
 }
@@ -343,7 +356,7 @@ footer a:hover {
 
     
     footer {
-    padding-top: 50px;
+    padding-top: 50 px;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     }
